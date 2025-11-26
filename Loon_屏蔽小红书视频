@@ -1,0 +1,8 @@
+# 阻止小红书首页推荐视频，但可能没用
+DOMAIN-SUFFIX,live-play.xhscdn.com,REJECT
+DOMAIN-SUFFIX,live-play-hs.xhscdn.com,REJECT
+DOMAIN-SUFFIX,live-play-hw.xhscdn.com,REJECT
+DOMAIN-SUFFIX,live-source-play.xhscdn.com,REJECT
+DOMAIN-SUFFIX,live-source-play-hs.xhscdn.com,REJECT
+DOMAIN-SUFFIX,live-source-play-hw.xhscdn.com,REJECT
+DOMAIN-SUFFIX,fe-video-qc.xhscdn.com,REJECT
