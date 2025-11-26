@@ -6,3 +6,6 @@ host-suffix,live-source-play.xhscdn.com,REJECT
 host-suffix,live-source-play-hs.xhscdn.com,REJECT
 host-suffix,live-source-play-hw.xhscdn.com,REJECT
 host-suffix,fe-video-qc.xhscdn.com,REJECT
+host,sns-video-qc.xhscdn.com,reject
+host,sns-video-hw.xhscdn.com,reject
+host,sns-video-bd.xhscdn.com,reject
