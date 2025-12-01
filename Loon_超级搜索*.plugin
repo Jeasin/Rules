@@ -165,7 +165,7 @@
 ^https:\/\/duckduckgo.com\/\?q=gi\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://cn.bing.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+ https://www.qimai.cn/search/index/search/$1 302
-^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
+# ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
 
 
 [MITM]
