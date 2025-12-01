@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/Moli-X/Resources/main/Icon/Image/Safari.png
 #!edit=https://github.com/Moli-X/Resources/edit/main/Loon/Search.plugin
 
-# Jeasin正准备添加些新的，放在Line 150（最后）
+# Jeasin正准备添加些新的，放在[URL Rewrite]前面，因为必须把通配规则放到最后。顺便修改注释顺序，把常用的调到前面。
 
 #############################################
 # 仓库地址: https://github.com/Moli-X
@@ -18,37 +18,53 @@
 # Safari 内输入 命令 + 空格 + 关键词 快速指定搜索引擎搜索
 #  注：先进入设置更改 Safari 默认搜索为 DuckDuckGO
 
+# tmdb xxx (TMDB, by Jeasin)
+# imdb xxx (IMDb, by Jeasin)
+# yd  xxx (有道词典)
+# db    xxx (豆瓣)
+# gh    xxx (GitHub)
+# zh    xxx (知乎)
+# rd    xxx (Reddit)
+# yt  xxx (YouTube)
+# bli xxx (哔哩哔哩)
+# bi  xxx (必应)
+# wk  xxx (维基搜索)
+# yh  xxx (油猴搜索)
+# bd  xxx (百度搜索)
+# gi  xxx (Google 图片)
+# tw    xxx (Twitter)
+
 # st  xxx (跳转到小火箭模块合集)
 # ln  xxx (跳转到loon插件合集)
 # qx  xxx(跳转到圈X重写合集)
 # sg  xxx(跳转到surge模块合集)
 # sh  xxx(跳转到stash覆写合集)
 
-# yd  xxx (有道词典)
+
 # trc xxx (Google 译至中)   
 # tre xxx (Google 译至英)
 # trj xxx (Google 译至日)
 
 # tt    xxx (头条)
-# db    xxx (豆瓣)
-# zh    xxx (知乎)
+
+
 # wx    xxx (微信)
 # up xxx (Unsplash)
 # sspai xxx (少数派站内搜索)
 # ssp   xxx (Google 搜索少数派)
 
-# tw    xxx (Twitter)
-# gh    xxx (GitHub)
+
+
 # so    xxx (Stack Overflow)
 # se    xxx (StackExchange)
 # wa    xxx (WolframAlpha)
-# rd    xxx (Reddit)
+
 
 # zdm xxx (什么值得买)
 # jd  xxx (京东)
 # tb  xxx (淘宝)
-# yt  xxx (YouTube)
-# bli xxx (哔哩哔哩)
+
+
 # gd  xxx (Google 搜索 Google Drive 资源)
 # tgd xxx (搜索 Google Drive 资源)
 # ph  xxx (PornHub)
@@ -67,13 +83,13 @@
 # tf xxx (google搜索Testflight)
 # mo xxx（莫离频道搜索）
 # tgm xxx（TG喵频道搜索）
-# bd  xxx (百度搜索)
+
 # es  xxx (Ecosia搜索)
-# wk  xxx (维基搜索)
+
 # wz  xxx (无追搜索)
-# yh  xxx (油猴搜索)
-# gi  xxx (Google 图片)
-# bi  xxx (必应)
+
+
+
 # ios  xxx (苹果应用搜索)
 #     xxx （无指令默认为 Google）
 
@@ -86,6 +102,10 @@
 
 
 [URL Rewrite]
+^https:\/\/duckduckgo\.com\/\?q=tmdb(?:\+|%20)([^&]+).+ https://www.themoviedb.org/search?query=$1 302
+^https:\/\/duckduckgo\.com\/\?q=imdb(?:\+|%20)([^&]+).+ https://www.imdb.com/find/?ref_=opensearch&q=$1 302
+# 以上是Jeasin新增
+
 ^https?://www\.google\.com/search\?q=st\+([^&]+).*$ 302 https://whatshub.top/shadowrocket
 ^https?://www\.google\.com/search\?q=ln\+([^&]+).*$ 302 https://whatshub.top/loon
 ^https?://www\.google\.com/search\?q=qx\+([^&]+).*$ 302 https://whatshub.top/quantumultx
@@ -146,10 +166,6 @@
 ^https:\/\/duckduckgo.com\/\?q=bi\+([^&]+).+ https://cn.bing.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=ios\+([^&]+).+ https://www.qimai.cn/search/index/search/$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
-
-# 以下是Jeasin新增
-^https:\/\/duckduckgo\.com\/\?q=tmdb(?:\+|%20)([^&]+).+ https://www.themoviedb.org/search?query=$1 302
-^https:\/\/duckduckgo\.com\/\?q=imdb(?:\+|%20)([^&]+).+ https://www.imdb.com/find/?ref_=opensearch&q=$1 302
 
 
 [MITM]
