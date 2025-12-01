@@ -148,8 +148,8 @@
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
 
 # 以下是Jeasin新增
-^https:\/\/duckduckgo.com\/\?q=tmdb\+([^&]+).+ https://www.themoviedb.org/search?query=$1 302
-^https:\/\/duckduckgo.com\/\?q=imdb\+([^&]+).+ https://www.imdb.com/find/?ref_=opensearch&q=$1 302
+^https:\/\/duckduckgo\.com\/\?q=tmdb(?:\+|%20)([^&]+).+ https://www.themoviedb.org/search?query=$1 302
+^https:\/\/duckduckgo\.com\/\?q=imdb(?:\+|%20)([^&]+).+ https://www.imdb.com/find/?ref_=opensearch&q=$1 302
 
 
 [MITM]
