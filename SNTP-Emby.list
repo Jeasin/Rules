@@ -1,5 +1,6 @@
 # >SNTP-Emby
-# >地址来自SNTP机场订阅YAML，不知道为什么这么多条。建议走‘DIRECT’路线。
+# >地址来自SNTP机场订阅YAML，不知道为什么这么多条。建议走‘DIRECT’路线。2026-6-3
+DOMAIN,s2.array2026.cc
 IP-CIDR,83.147.61.152/32
 IP-CIDR,104.160.170.190/32
 DOMAIN,preus.cn2gias.uk
